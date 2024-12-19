@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap");
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+h1 {
+  font-weight: 900;
+  color: #1d3557;
+  font-size: 60px;
+}
+a {
+  font-weight: 700;
+}
+section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 90%;
+}
+section img {
+  width: 30%;
+}
+#barra a {
+  /*a por p*/
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  position: absolute;
+  left: -165px;
+  transition: all 2s;
+  padding: 17px;
+  width: 150px; /*y height, misma altura de la img,background aqui, width 0*/
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+
+#barra a:hover {
+  /*hereda el position: absolute, por eso de puede porner left, img:hover, background y width diferente de 0, tal vez un trasition con width*/
+  left: 0;
+}
+
+#inicio {
+  /*se pone top: 20px porque #barra a: tiene position: absolute, lo hereda*/
+  top: 20px; /*cinta ubicacion*/
+  background-color: #1d3557;
+}
+
+#contacto {
+  top: 80px; /*cinta ubicacion*/
+  background-color: #a8dadc;
+}
+
+#suscripcion {
+  top: 140px; /*cinta ubicacion*/
+  background-color: #457b9d;
+}
+
+main {
+  margin: auto;
+  padding-left: 160px;
+  width: 80%;
+}
